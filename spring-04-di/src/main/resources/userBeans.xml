@@ -6,7 +6,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="user" class="com.snow.pojo.User" p:age="18" p:name="snow"></bean>
+    <bean id="user" class="com.snow.pojo.User" p:age="18" p:name="snow"/>
+
+
+    <bean id="user2" class="com.snow.pojo.User" c:age="18" c:name="snowY" scope="prototype"/>
 
 
 </beans>
