@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--&lt;!&ndash;    无参构造&ndash;&gt;-->
+    <!--    <bean id="User" class="com.snow.pojo.User">-->
+    <!--        <property name="name" value="胡士扬"/>-->
+    <!--    </bean>-->
+
+    <!--    &lt;!&ndash;    下标赋值&ndash;&gt;-->
+    <!--    <bean id="User" class="com.snow.pojo.User">-->
+    <!--        <constructor-arg index="0" value="胡士扬"/>-->
+    <!--    </bean>-->
+
+    <!--&lt;!&ndash;    类型赋值&ndash;&gt;-->
+    <!--    <bean id="User" class="com.snow.pojo.User">-->
+    <!--        <constructor-arg type="java.lang.String" value="胡士扬"/>-->
+    <!--    </bean>-->
+
+    <!--    直接通过参数名赋值-->
+    <bean id="user" class="com.snow.pojo.User" name="acc,acc2">
+        <constructor-arg name="name" value="胡士扬"/>
+    </bean>
+
+
+    <bean class="com.snow.pojo.UserT" id="userT">
+        <property name="name" value="胡士扬T"/>
+    </bean>
+
+
+</beans>
