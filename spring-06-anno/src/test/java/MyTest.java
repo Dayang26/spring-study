@@ -15,4 +15,21 @@ public class MyTest {
         User user = context.getBean("user", User.class);
         System.out.println(user);
     }
+
+    @Test
+    public void test2() {
+        Long startTime = System.currentTimeMillis();
+        Long entTime = startTime + 1000;
+        Long count = (long) 0;
+
+        while (true) {
+            Math.sqrt(count);
+            if (entTime < System.currentTimeMillis()) {
+                break;
+            }
+            ++count;
+        }
+
+        System.out.println("一秒进行了  " + count + "  次循环");
+    }
 }
