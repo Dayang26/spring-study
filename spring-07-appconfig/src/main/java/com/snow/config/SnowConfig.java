@@ -4,6 +4,7 @@ import com.snow.pojo.User;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,7 +13,8 @@ import org.springframework.stereotype.Component;
  */
 
 @Configuration
-
+@ComponentScan("com.snow.pojo")
+@Import(com.snow.config.SnowConfig2.class)
 public class SnowConfig {
     @Bean
     public User user() {
