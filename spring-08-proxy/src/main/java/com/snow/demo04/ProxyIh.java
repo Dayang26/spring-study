@@ -34,9 +34,20 @@ public class ProxyIh implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 
+        watchHouse();
+
+        signContract();
+
         //动态代理的本质，就是使用反射机制实现
         Object result = method.invoke(rent, args);
-
         return result;
+    }
+
+    public void watchHouse() {
+        System.out.println("Watch houses....");
+    }
+
+    public void signContract() {
+        System.out.println("Sign a contract....");
     }
 }
