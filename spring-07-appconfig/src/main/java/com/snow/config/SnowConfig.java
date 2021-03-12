@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 
 @Configuration
 @ComponentScan("com.snow.pojo")
-@Import(com.snow.config.SnowConfig2.class)
+@Import(com.snow.config.SnowConfig2.class   )
 public class SnowConfig {
     @Bean
     public User user() {
