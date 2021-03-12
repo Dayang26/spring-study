@@ -8,7 +8,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void add() {
-        System.out.println("使用了add方法");
         System.out.println("add a user");
     }
 
